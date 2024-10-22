@@ -11,8 +11,8 @@ def mintuple(x):
 # Ensure cluster assignment is feasible (has at least one data point in each cluster)
 def cluster_fix(X,K):
     """
-    cluster_assignments = the integer values associated with each cluster
-    number_of_clusters = list of clusters
+    X = cluster assignments (that maps the integer values in 'x' onto different clusters)
+    K = number of clusters
     This function ensures that every cluster has at least one data point assigned to it (otherwise the other functions would break)
     For example, if cluster 2 doesn't have any data points, starting on the 0th index, we would add the value '1' to the cluster.
     If cluster 3 doesn't have any data points, then we would add the value '2' to the cluster.
